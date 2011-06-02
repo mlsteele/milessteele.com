@@ -1,0 +1,178 @@
+body {
+	background-color: #E3D8C0;
+//	background-image: url(/images/spliral_tile_edo_650_sep.jpg);
+	color: #251C0F;
+	font-size: 11pt;
+	font-family: Georgia;
+	margin: 0px;
+	overflow-y: scroll;
+}
+
+A:link    {text-decoration: underline; color: #251C0F;}
+A:visited {text-decoration: underline; color: #251C0F;}
+A:active  {text-decoration: none; color: #251C0F;}
+A:hover   {text-decoration: none; color: #44331B;}
+
+#navcol A:link    {text-decoration: none; color: #251C0F;}
+#navcol A:visited {text-decoration: none; color: #251C0F;}
+#navcol A:active  {text-decoration: none; color: #251C0F;}
+#navcol A:hover   {text-decoration: none; color: #44331B;}
+
+#head A:link    {text-decoration: none; color: #251C0F;}
+#head A:visited {text-decoration: none; color: #251C0F;}
+#head A:active  {text-decoration: none; color: #251C0F;}
+#head A:hover   {text-decoration: none; color: #251C0F;}
+
+img {
+	border: none;
+}
+
+#shadow_left {
+	width: 956px;
+	margin: 0 auto;
+	background: url(/images/shadow_left.jpg) repeat-y;
+}
+
+#shadow_right {
+	width: 956px;
+	background: url(/images/shadow_right.jpg) repeat-y right;
+}
+
+#shadow_in_left {
+	width: 900px;
+	background: url(/images/shadow_in_left.png) repeat-y left;
+	min-height:100%;
+	min-height:100%;
+}
+
+#shadow_in_right {
+	width: 900px;
+	background: url(/images/shadow_in_right.png) repeat-y right;
+	min-height:100%;
+}
+
+#container {
+	background-color: #FFF8E6;
+	background-image: url(/images/header.png);
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	width: 900px;
+	min-height:100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#head {
+	width: 890px;
+	height: 50px;
+	padding: 5px;
+	overflow: hidden;
+}
+
+#head_left {
+	display: block;
+	float: left;
+}
+
+#head_right {
+	display: block;
+	width: 120px;
+	float: right;
+	text-align: right;
+}
+
+#navcol {
+	width: 120px;
+	margin-top: 15px;
+	float: left;
+	text-align: right;
+}
+
+#navlist {
+	margin: 0px;
+	padding: 0px;
+}
+
+#navlist li {
+	letter-spacing: 1px;
+	width: 120px;
+	list-style-type: none;
+	margin-bottom: -2px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	
+	border-color: #1b150e;
+	border-left-width: 0px;
+	border-bottom-width: 2px;
+	border-right-width: 0px;
+	border-top-width: 2px;
+	border-style: solid;
+	
+	font-size: 12pt;
+	font-family: Georgia;
+}
+
+#content {
+	position: relative;
+	width: 780px;
+	float: right;
+	text-align: center;
+	overflow: hidden;
+}
+
+#footer {
+	clear: both;
+	padding: 10px;
+	font-size: 70%;
+	text-align: center;
+	color: #847A68;
+}
+
+#content .cathead {
+	font-size: 14pt;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+
+#content .imageholder {
+	padding: 10px;
+	margin: 20px;
+	background-color: #261A11;
+	border: none;
+}
+
+.category_inlist {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.category_inlist .rep_img {
+	float: left;
+	width: 360px;
+	overflow: hidden;
+}
+
+.category_inlist .cat_text {
+	float: left;
+	width: 405px;
+	margin-left: 5px;
+	overflow: hidden;
+}
+
+.category_inlist .cathead {
+	text-align: left;
+	margin-left: 3px;
+	margin-bottom: 5px;
+	font: Helvetica;
+}
+
+.category_inlist .cat_descrip {
+	text-align: justify;
+	text-indent: 20px;
+}
+
+#content .text {
+	margin: 10px;
+	text-align: left;
+}
