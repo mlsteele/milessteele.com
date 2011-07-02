@@ -103,6 +103,7 @@
 	<div id="navcol">
 		<ul id="navlist">
 		<li><a href="blender">Blender</a></li>
+		<li><a href="animation">Animation</a></li>
 		<li><a href="context_free">Context Free</a></li>
 		<li><a href="voluminisms">Voluminisms</a></li>
 		<li><a href="avatars">Avatars</a></li>

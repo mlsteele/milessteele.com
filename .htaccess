@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(blender|context_free|voluminisms|avatars|about_me|404)$ ?pageid=$1
+RewriteRule ^(blender|animation|context_free|voluminisms|avatars|about_me|404)$ ?pageid=$1
 RewriteRule ^(uut)$ $1.php
 
 Options -Indexes

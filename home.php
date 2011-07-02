@@ -28,6 +28,19 @@
 
 <div class="category_inlist">
 	<div class="rep_img">
+		<a href="animation"><img class="imageholder" style="margin: 0px;" src="images/blender/300/bounceball.jpg" width="300" alt="collection item"></a>
+	</div>
+	<div class="cat_text">
+		<div class="cathead"><a href="/animation">Animation</a></div>
+		<div class="cat_descrip">
+			Collection of Blender animation videos.
+		</div>
+	</div>
+</div>
+
+
+<div class="category_inlist">
+	<div class="rep_img">
 		<?php image_placer_catlist('nexuses_morang_WTI', 'context_free', 300); ?>
 	</div>
 	<div class="cat_text">
