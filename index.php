@@ -9,6 +9,29 @@
 
 <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
 
+<!-- NavBar -->
+<script type="text/javascript">
+	$(document).ready(function() {
+		var nav = $('#navcol');
+		var nit = nav.offset().top - parseInt(nav.css('margin-top'), 10);;
+		
+		$(window).scroll(function() {
+			var wt = $(window).scrollTop()
+			if (wt > nit) {
+				nav.css({
+					'position': 'fixed',
+					'top': '0px'
+				});
+			} else {
+				nav.css({
+					'position': 'absolute',
+					'top': 'auto'
+				});
+			}
+		});
+	});
+</script>
+
 <!-- fancybox -->
 <!-- Requires jQuery here btw -->
 <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
@@ -76,7 +99,6 @@
 ?>
 
 </head>
-
 
 <body>
 <div id="container">
