@@ -4,9 +4,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
 <meta name="description" content="The image portfolio of Miles Steele.">
 
-<link rel="stylesheet" href="/css/basis.css" type="text/css">
-
 <link rel="shortcut icon" href="/images/micon/micon.ico">
+<link rel="stylesheet" href="/style/basis.css" type="text/css">
+
+<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+
+<!-- fancybox -->
+<!-- Requires jQuery here btw -->
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.fbox").fancybox({
+			'transitionIn'		:	'fade',
+			'transitionOut'		:	'fade',
+			'speedIn'			:	200,
+			'speedOut'			:	200,
+			'overlayShow'		:	true,
+			'overlayOpacity'	:	.3,
+			'overlayColor'		:	'#E3D8C0',
+			'hideOnOverlayClick':	true,
+			'autoScale'			:	true,
+			'centerOnScroll'	:	true,
+			'titleShow'			:	false,
+			'changeSpeed'		:	200,
+		});
+	});
+</script>
+<!-- /fancybox -->
 
 <?php
 	# setup page identification
@@ -36,39 +63,6 @@
 	echo "</title>";
 ?>
 
-<!-- lightbox
-<script type="text/javascript" src="js/prototype.js"></script>
-<script type="text/javascript" src="js/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="js/lightbox.js"></script>
-<link rel="stylesheet" href="css/lightbox.css" type="text/css">
--->
-
-<!-- fancybox -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
-<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("a.fbox").fancybox({
-			'transitionIn'		:	'fade',
-			'transitionOut'		:	'fade',
-			'speedIn'			:	200,
-			'speedOut'			:	200,
-			'overlayShow'		:	true,
-			'overlayOpacity'	:	.3,
-			'overlayColor'		:	'#E3D8C0',
-			'hideOnOverlayClick':	true,
-			'autoScale'			:	true,
-			'centerOnScroll'	:	true,
-			'titleShow'			:	false,
-			'changeSpeed'		:	200,
-		});
-	});
-</script>
-<!-- /fancybox -->
-
 <?php
 	# image placer functions
 	function image_placer($imgname, $width) {
@@ -85,7 +79,7 @@
 
 
 <body>
-<!--<div id="shadow_left"><div id="shadow_right">--><div id="container"><div id="shadow_in_left"><div id="shadow_in_right">
+<div id="container">
 
 	<div id="head">
 		<a href="/" id="head_left">
@@ -106,7 +100,7 @@
 		<li><a href="animation">Animation</a></li>
 		<li><a href="context_free">Context Free</a></li>
 		<li><a href="voluminisms">Voluminisms</a></li>
-		<li><a href="avatars">Avatars</a></li>
+		<li><a href="programming">Programming</a></li>
 		</ul>
 	</div>
 	
@@ -120,6 +114,6 @@
 		<p><a href="javascript:scroll(0,0)">Top</a> | &#169; 2010 <a href="about_me">Miles Steele</a></p>
 	</div>
 	
-</div></div></div><!--</div></div>-->
+</div>
 </body>
 </html>

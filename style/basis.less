@@ -1,3 +1,15 @@
+.dropBoxShadowInset(@offsetX, @offsetY, @blur, @spread, @color) {
+	-moz-box-shadow: inset @offsetX @offsetY @blur @spread @color;
+	-webkit-box-shadow: inset @offsetX @offsetY @blur @spread @color;
+	box-shadow: inset @offsetX @offsetY @blur @spread @color;
+}
+
+.roundedCorners (@radius) {
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+}
+
 body {
 	background-color: #E3D8C0;
 //	background-image: url(/images/header2.png);
@@ -27,31 +39,8 @@ img {
 	border: none;
 }
 
-#shadow_left {
-	width: 956px;
-	margin: 0 auto;
-	background: url(/images/shadow_left.jpg) repeat-y;
-}
-
-#shadow_right {
-	width: 956px;
-	background: url(/images/shadow_right.jpg) repeat-y right;
-}
-
-#shadow_in_left {
-	width: 900px;
-	background: url(/images/shadow_in_left.png) repeat-y left;
-	min-height:100%;
-	min-height:100%;
-}
-
-#shadow_in_right {
-	width: 900px;
-	background: url(/images/shadow_in_right.png) repeat-y right;
-	min-height:100%;
-}
-
 #container {
+	.dropBoxShadowInset(0, 0, 20px, 0px, #918D82);
 	background-color: #FFF8E6;
 	background-image: url(/images/header.png);
 	background-repeat: no-repeat;
