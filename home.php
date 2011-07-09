@@ -1,5 +1,3 @@
-<!--<span>You made it home!<br>Someone should stick a gallery or something here.</span><br>-->
-
 <?php
 #	image_placer_gallery($imgname, $set, $width);
 

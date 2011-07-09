@@ -1,6 +1,6 @@
 <?php $title='Context Free' ?>
 
-<div class="cathead">Context Free</div>
+<div class="pagehead">Context Free</div>
 
 <?php
 #	image_placer($imgname, $width);

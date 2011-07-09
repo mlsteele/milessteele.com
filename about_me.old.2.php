@@ -1,6 +1,6 @@
 <?php $title='About Me' ?>
 
-<div class="cathead">About Me</div>
+<div class="pagehead">About Me</div>
 
 <div style="float: left; height: auto; overflow: hidden;">
 	<img class="imageholder" src="/images/me_turtle.png" width="300" alt="self & turtle"><br>

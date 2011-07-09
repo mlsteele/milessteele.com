@@ -1,6 +1,6 @@
 <?php $title='Animation' ?>
 
-<div class="cathead">Animation</div>
+<div class="pagehead">Animation</div>
 
 <?php
 #function video_placer($imgname, $width) {

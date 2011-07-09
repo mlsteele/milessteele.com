@@ -1,6 +1,6 @@
 <?php $title='Avatars' ?>
 
-<div class="cathead">Avatars</div>
+<div class="pagehead">Avatars</div>
 
 <?php
 #	image_placer($imgname, $width);

@@ -9,10 +9,37 @@
 
 <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
 
+<!-- fancybox -->
+<!-- Requires jQuery here btw -->
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a.fbox").fancybox({
+			'transitionIn'		:	'elastic',
+			'transitionOut'		:	'fade',
+			'speedIn'			:	200,
+			'speedOut'			:	100,
+			'overlayShow'		:	true,
+			'overlayOpacity'	:	.4,
+			'overlayColor'		:	'#000',
+			'hideOnOverlayClick':	true,
+			'autoScale'			:	true,
+			'centerOnScroll'	:	false,
+			'titleShow'			:	false,
+			'changeSpeed'		:	100,
+			'cyclic'			:	true
+		});
+	});
+</script>
+<!-- /fancybox -->
+
 <!-- NavBar -->
 <script type="text/javascript">
 	$(document).ready(function() {
-		var nav = $('#navcol');
+		var nav = $('#nav');
 		var nit = nav.offset().top - parseInt(nav.css('margin-top'), 10);;
 		
 		$(window).scroll(function() {
@@ -32,32 +59,6 @@
 	});
 </script>
 
-<!-- fancybox -->
-<!-- Requires jQuery here btw -->
-<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
-<script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
-<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
-<script type="text/javascript">
-	$(document).ready(function(){
-		$("a.fbox").fancybox({
-			'transitionIn'		:	'fade',
-			'transitionOut'		:	'fade',
-			'speedIn'			:	200,
-			'speedOut'			:	200,
-			'overlayShow'		:	true,
-			'overlayOpacity'	:	.3,
-			'overlayColor'		:	'#E3D8C0',
-			'hideOnOverlayClick':	true,
-			'autoScale'			:	true,
-			'centerOnScroll'	:	true,
-			'titleShow'			:	false,
-			'changeSpeed'		:	200,
-		});
-	});
-</script>
-<!-- /fancybox -->
-
 <?php
 	# setup page identification
 	$pageid = $_GET['pageid'];
@@ -75,7 +76,7 @@
 	$content_buffer = ob_get_contents();
 	ob_end_clean();
 	
-	# title page
+	# entitle page
 	echo "<title>";
 	if ($pageid == "") {
 		echo "Miles Steele";
@@ -90,11 +91,12 @@
 	# image placer functions
 	function image_placer($imgname, $width) {
 		global $collection;
-		echo "<a href=\"images/$collection/fbox/$imgname.jpg\" class=\"fbox\" rel=\"$collection\"><img class=\"imageholder\" src=\"images/$collection/$width/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
+		$height = 9/16*$width;
+		echo "<a href=\"images/$collection/fbox/$imgname.jpg\" class=\"fbox\" rel=\"$collection\"><img class=\"fimage\" src=\"images/$collection/$width/$imgname.jpg\" width=\"$width\" height=\"$height\" alt=\"collection item\"></a>";
 	}
 	
 	function image_placer_catlist($imgname, $set, $width) {
-		echo "<a href=\"$set\"><img class=\"imageholder\" style=\"margin: 0px;\" src=\"images/$set/300/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
+		echo "<a href=\"$set\"><img class=\"fimage\" src=\"images/$set/300/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
 	}
 ?>
 
@@ -103,20 +105,17 @@
 <body>
 <div id="container">
 
-	<div id="head">
+	<div id="header">
 		<a href="/" id="head_left">
-			<span style="font-size: 16pt; margin-left: 5px">Miles<b>Steele</b></span><br>
-			<span style="font-size: 12pt; margin-left: 10px">
-				<b>image</b>portfolio
-			</span>
+			<div id="title">Miles<b>Steele</b></div>
+			<div id="subtitle"><b>image</b>portfolio</div>
 		</a>
 		<a href="about_me" id="head_right">
-			<span style="font-size: 12pt;">about<b>me</b></span>
-			<img style="float: right;" src="images/person_icon2.png" alt="" height="25px">
+			<span>about<b>me</b></span>
 		</a>
 	</div>
-
-	<div id="navcol">
+	
+	<div id="nav">
 		<ul id="navlist">
 		<li><a href="blender">Blender</a></li>
 		<li><a href="animation">Animation</a></li>
@@ -133,7 +132,7 @@
 	</div>
 	
 	<div id="footer">
-		<p><a href="javascript:scroll(0,0)">Top</a> | &#169; 2010 <a href="about_me">Miles Steele</a></p>
+		<span><a href="javascript:scroll(0,0)">Top</a> | &#169; 2010 <a href="about_me">Miles Steele</a></span>
 	</div>
 	
 </div>

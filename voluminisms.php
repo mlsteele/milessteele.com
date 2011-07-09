@@ -1,6 +1,6 @@
 <?php $title='Voluminisms' ?>
 
-<div class="cathead">Voluminisms</div>
+<div class="pagehead">Voluminisms</div>
 
 <?php
 #	image_placer($imgname, $width);
