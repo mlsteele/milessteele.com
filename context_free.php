@@ -6,7 +6,7 @@
 #	image_placer($imgname, $width);
 $collection = 'context_free';
 
-image_placer('boilplanet_FU',  300);
+image_placer('boilplanet_FU',  600);
 image_placer('nexuses_TVB_small',  300);
 image_placer('nexuses_morang_WTI',  660);
 image_placer('nexwhirl_WWO',  300);

@@ -36,28 +36,33 @@
 </script>
 <!-- /fancybox -->
 
-<!-- NavBar -->
+<!-- NavBar
 <script type="text/javascript">
 	$(document).ready(function() {
 		var nav = $('#nav');
-		var nit = nav.offset().top - parseInt(nav.css('margin-top'), 10);;
+		var nit = {
+			top: nav.offset().top - parseInt(nav.css('margin-top'), 10),
+			left: nav.offset().left - parseInt(nav.css('margin-left'), 10),
+		}
 		
 		$(window).scroll(function() {
 			var wt = $(window).scrollTop()
-			if (wt > nit) {
+			console.log(wt > nit.top);
+			if (wt > nit.top) {
 				nav.css({
 					'position': 'fixed',
 					'top': '0px'
 				});
 			} else {
 				nav.css({
-					'position': 'absolute',
+					'position': 'static',
 					'top': 'auto'
 				});
 			}
 		});
 	});
 </script>
+-->
 
 <?php
 	# setup page identification
@@ -68,6 +73,7 @@
 	function callback($buffer) {}
 	ob_start("callback");
 	if ($pageid == "") {
+		$title = '';
 		include("home.php");
 	}
 	else {
@@ -89,10 +95,16 @@
 
 <?php
 	# image placer functions
-	function image_placer($imgname, $width) {
+	function image_placer($imgname, $factor) {
+		if ($factor == 1) {
+		    $dir = 660;
+		    $width = 600;
+		} elseif ($factor == .5) {
+		    $dir = 300;
+		    $width = 300;
+		}
 		global $collection;
-		$height = 9/16*$width;
-		echo "<a href=\"images/$collection/fbox/$imgname.jpg\" class=\"fbox\" rel=\"$collection\"><img class=\"fimage\" src=\"images/$collection/$width/$imgname.jpg\" width=\"$width\" height=\"$height\" alt=\"collection item\"></a>";
+		echo "<a href=\"images/$collection/fbox/$imgname.jpg\" class=\"fbox\" rel=\"$collection\"><img class=\"fimage\" src=\"images/$collection/$dir/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
 	}
 	
 	function image_placer_catlist($imgname, $set, $width) {
@@ -103,38 +115,33 @@
 </head>
 
 <body>
-<div id="container">
 
-	<div id="header">
-		<a href="/" id="head_left">
-			<div id="title">Miles<b>Steele</b></div>
-			<div id="subtitle"><b>image</b>portfolio</div>
-		</a>
-		<a href="about_me" id="head_right">
-			<span>about<b>me</b></span>
-		</a>
+<div id="container">
+	<div id="colL">
+		<a id="symbol" href="/"></a>
+		<div id="divisorL"></div>
+		<div id="nav">
+			<ul id="navlist">
+				<a href="blender"><li>Blender 3D</li></a>
+				<a href="animation"><li>Animation</li></a>
+				<a href="context_free"><li>Context Free</li></a>
+				<a href="voluminisms"><li>Voluminisms</li></a>
+				<a href="programming"><li>Programming</li></a>
+			</ul>
+		</div>
 	</div>
-	
-	<div id="nav">
-		<ul id="navlist">
-		<li><a href="blender">Blender</a></li>
-		<li><a href="animation">Animation</a></li>
-		<li><a href="context_free">Context Free</a></li>
-		<li><a href="voluminisms">Voluminisms</a></li>
-		<li><a href="programming">Programming</a></li>
-		</ul>
+	<div id="divisorM"></div>
+	<div id="colR">
+		<div id="pagetitle"><?php echo $title; ?></div>
+		<div id="divisorR"></div>
+		<div id="content">
+			<?php echo "$content_buffer"; ?>
+		</div>
 	</div>
-	
-	<div id="content">
-		<?php
-			echo "$content_buffer";
-		?>
-	</div>
-	
 	<div id="footer">
-		<span><a href="javascript:scroll(0,0)">Top</a> | &#169; 2010 <a href="about_me">Miles Steele</a></span>
-	</div>
-	
+        <a href="javascript:$('body').animate({scrollTop: '0px'}, 200);">Top</a> | &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
+    </div>
 </div>
+
 </body>
 </html>

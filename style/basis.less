@@ -16,128 +16,155 @@
   -moz-border-radius: @radius;
 }
 
-.implicitLink {
-	A:link    {text-decoration: none; color: #000;}
-	A:visited {text-decoration: none; color: #000;}
-	A:active  {text-decoration: none; color: #000;}
-	A:hover   {text-decoration: none; color: #000;}
+@primary-text-color: #000;
+@primary-font: Arial, 'Helvetica Neue', Sans;
+
+.stealthLink {
+	A:link    {text-decoration: none; color: @primary-text-color;}
+	A:visited {text-decoration: none; color: @primary-text-color;}
+	A:active  {text-decoration: none; color: @primary-text-color;}
+	A:hover   {text-decoration: none; color: @primary-text-color;}
 }
+
+@link-color: #666;
+@link-color-active: @link-color + #222;
+A:link    {text-decoration: none; color: @link-color;}
+A:visited {text-decoration: none; color: @link-color;}
+A:active  {text-decoration: none; color: @link-color-active;}
+A:hover   {text-decoration: none; color: @link-color-active;}
 
 body {
-	color: #000;
+	background-color: #fff;
+	// Font
+	color: @primary-text-color;
 	font-size: 11pt;
-	font-family: 'Arial, Helvetica Neue, Helvetica, Sans';
-	margin: 0px;
-	overflow-y: scroll;
+	font-family: @primary-font;
+	
+	// Flow
+	margin: 0;
 }
 
-A:link    {text-decoration: underline; color: #251C0F;}
-A:visited {text-decoration: underline; color: #251C0F;}
-A:active  {text-decoration: none; color: #251C0F;}
-A:hover   {text-decoration: none; color: #44331B;}
-
-img {
-	border: none;
-}
+@LCwidth: 200px;
+@RCwidth: 600px;
+@LineSpacing: 20px;
+@Lstart: 40px;
+@Rstart: 10px;
 
 #container {
-	background-color: #D8BEBE;
-//	.dropBoxShadowInset(0, 0, 20px, 0px, #918D82);
-//	background-color: #FFF8E6;
-//	background-image: url(/images/header.png);
-//	background-repeat: no-repeat;
-	margin: 0px auto;
-	width: 900px;
-	min-height: 100%;
-	overflow: hidden;
+	width: @LCwidth + @RCwidth + @LineSpacing;
+	margin: 0 auto;
 	position: relative;
-		
-	#header {
-		background-color: #BECED8;
-		.implicitLink;
-		width: 890px;
-		height: 50px;
-		padding: 5px;
-		overflow: hidden;
-		font-family: 'Georgia';
-		
-		#head_left {
-			background-color: #C0D8BE;
-			display: block;
-			float: left;
-		}
-		
-		#head_right {
-			background-color: #D4BED8;
-			display: block;
-			width: 120px;
-			float: right;
-			text-align: right;
-		}
-	}
 	
-	#nav {
-		background-color: #BECBD8
-		.implicitLink;
-		width: 120px;
-		margin-top: 15px;
+	#colL {		
+		width: @LCwidth;
 		float: left;
-		text-align: right;
+		margin-top: @Lstart;
 		
-		#navlist {
-			background-color: #D8BEBE;
-			margin: 0px;
-			padding: 0px;
+		#symbol {
+			background-image: url(/images/onionV10.png);
+			background-repeat: no-repeat;
+			background-position: 0px 0px;
 			
-			li {
-				background-color: #BED8C0;
-				
-				letter-spacing: 1px;
-				width: 120px;
-				list-style-type: none;
-				margin-bottom: -2px;
-				padding-top: 5px;
-				padding-bottom: 5px;
-				
-				border-color: #1b150e;
-				border-left-width: 0px;
-				border-bottom-width: 2px;
-				border-right-width: 0px;
-				border-top-width: 2px;
-				border-style: solid;
-				
-				font-size: 12pt;
-				font-family: Georgia;
+			width: 200px;
+			height: 200px;
+			float: right;
+		}
+		
+//		#symbol:hover {
+//			background-image: url(/images/onionV4.png);
+//		}
+		
+		#divisorL {
+			background-image: url(/images/divisorL.png);
+			background-repeat: no-repeat;
+			background-position: 100% 0px;
+			
+			float: right;
+			width: @RCwidth + @LineSpacing;
+			height: @LineSpacing;
+			margin-top: 0px;
+		}
+		
+		#nav {
+			float: right;
+			
+			ul {
+			list-style-type: none;
+			text-align: right;
+			.stealthLink;
+			
+				li {
+					letter-spacing: 1.5px;
+					
+					@border-width: 1px;
+					border-style: solid;
+					border-color: #666;
+					border-width: @border-width 0px;
+					padding: 10px 10px;
+					margin-bottom: -@border-width;
+				}
 			}
 		}
 	}
 	
-	#content {
-		background-color: #B9C9B9;
-		position: relative;
-		width: 780px;
-		float: right;
-		text-align: center;
-		overflow: hidden;
+	#divisorM {
+		background-image: url(/images/divisorM.png);
+		background-repeat: repeat-y;
+		background-position: 0px 0px;
 		
-		.pagehead {
-			font-size: 14pt;
+		width: @LineSpacing;
+		height: 620px;
+		float: left;
+	}
+	
+	#colR {
+		width: @RCwidth;
+		float: left;
+		margin-top: @Rstart;
+		
+		#pagetitle {
+			font-family: 'Times New Roman';
+			font-variant: small-caps;
+			font-size: 50px;
+			letter-spacing: 4px;
+			padding-left: 30px;
 		}
 		
-		.fimage {
-			background-color: #8AA1D3;
-//			border-style: solid;
-//			border-width: 4px;
-//			border-color: #000;
+		#divisorR {
+			background-image: url(/images/divisorR.png);
+			background-repeat: no-repeat;
+			background-position: 0px 0px;
+			
+			width: @RCwidth + @LineSpacing;
+			height: @LineSpacing;
+		}
+		
+		#content {
+			padding-left: 3px;
+			padding-top: 10px;
+			
+			div {
+				margin-bottom: 30px;
+			}
+		
+			.imgholder {
+//				background-color: #fff;
+//				padding: 10px;
+				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
+			}
+			
+			.exegesis {
+				padding: 15px;
+				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
+			}
 		}
 	}
 	
-	#footer {
-		background-color: #BED8C0;
-		clear: both;
-		padding: 10px;
-		font-size: 70%;
+	#footer {	
+		font-size: 11px;
 		text-align: center;
-		color: #847A68;
+		padding-bottom: 10px;
+		bottom: 0px;
+		clear: both;
 	}
 }
