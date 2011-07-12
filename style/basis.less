@@ -87,31 +87,34 @@ body {
 		
 		#nav {
 			float: right;
+			position: relative;
 			
 			ul {
+			margin-top: 5px;
 			list-style-type: none;
 			text-align: right;
 			.stealthLink;
 			
 				li {
-					@border-width: 1px;
+					letter-spacing: 1.5px;
 					
-					width: 100px;
-					padding: 20px 20px;
-					margin-bottom: -@border-width;
-					position: relative;
-					overflow: visible;
-					
-					border-width: @border-width 0px;
-					border-color: #666;
 					border-style: solid;
-					
-					span {
-						letter-spacing: 1.5px;
-						top: 10px;
-						right: 0px;
-						position: absolute;
-					}
+					border-color: #666;
+					border-width: 0px 0px;
+					padding: 10px 10px;
+				}
+				
+				.navdiv {
+				    height: 0px;
+				    right: 0px;
+				    width: 0px;
+				    margin-right: 58px;
+				    
+				    border: 0px;
+				    border-top: 1px;
+					border-style: solid;
+					border-color: #666;
+					position: absolute;
 				}
 			}
 		}
@@ -160,7 +163,13 @@ body {
 			.imgholder {
 //				background-color: #fff;
 //				padding: 10px;
-				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
+//				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
+			}
+			
+			.vidcan {
+				background-color: #fff;
+				margin: 50px;
+				.dropBoxShadow(0, 0, 20px, 0, #ccc);
 			}
 			
 			.exegesis {

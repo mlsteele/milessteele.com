@@ -9,6 +9,8 @@
 
 <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
 
+<script type="text/javascript" src="/js/basis.js"></script>
+
 <!-- fancybox -->
 <!-- Requires jQuery here btw -->
 <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
@@ -35,34 +37,6 @@
 	});
 </script>
 <!-- /fancybox -->
-
-<!-- NavBar
-<script type="text/javascript">
-	$(document).ready(function() {
-		var nav = $('#nav');
-		var nit = {
-			top: nav.offset().top - parseInt(nav.css('margin-top'), 10),
-			left: nav.offset().left - parseInt(nav.css('margin-left'), 10),
-		}
-		
-		$(window).scroll(function() {
-			var wt = $(window).scrollTop()
-			console.log(wt > nit.top);
-			if (wt > nit.top) {
-				nav.css({
-					'position': 'fixed',
-					'top': '0px'
-				});
-			} else {
-				nav.css({
-					'position': 'static',
-					'top': 'auto'
-				});
-			}
-		});
-	});
-</script>
--->
 
 <?php
 	# setup page identification
@@ -121,11 +95,17 @@
 		<div id="divisorL"></div>
 		<div id="nav">
 			<ul id="navlist">
-				<a href="blender"><li><span>Blender 3D</span></li></a>
-				<a href="animation"><li><span>Animation</span></li></a>
-				<a href="context_free"><li><span>Context Free</span></li></a>
-				<a href="voluminisms"><li><span>Voluminisms</span></li></a>
-				<a href="programming"><li><span>Programming</span></li></a>
+			    <div class="navdiv"></div>
+				<a href="blender"><li>Blender 3D</li></a>
+				<div class="navdiv"></div>
+				<a href="animation"><li>Animation</li></a>
+				<div class="navdiv"></div>
+				<a href="context_free"><li>Context Free</li></a>
+				<div class="navdiv"></div>
+				<a href="voluminisms"><li>Voluminisms</li></a>
+				<div class="navdiv"></div>
+				<a href="programming"><li>Programming</li></a>
+				<div class="navdiv"></div>
 			</ul>
 		</div>
 	</div>
