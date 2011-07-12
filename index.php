@@ -73,7 +73,6 @@
 	function callback($buffer) {}
 	ob_start("callback");
 	if ($pageid == "") {
-		$title = '';
 		include("home.php");
 	}
 	else {
@@ -122,11 +121,11 @@
 		<div id="divisorL"></div>
 		<div id="nav">
 			<ul id="navlist">
-				<a href="blender"><li>Blender 3D</li></a>
-				<a href="animation"><li>Animation</li></a>
-				<a href="context_free"><li>Context Free</li></a>
-				<a href="voluminisms"><li>Voluminisms</li></a>
-				<a href="programming"><li>Programming</li></a>
+				<a href="blender"><li><span>Blender 3D</span></li></a>
+				<a href="animation"><li><span>Animation</span></li></a>
+				<a href="context_free"><li><span>Context Free</span></li></a>
+				<a href="voluminisms"><li><span>Voluminisms</span></li></a>
+				<a href="programming"><li><span>Programming</span></li></a>
 			</ul>
 		</div>
 	</div>

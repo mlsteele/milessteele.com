@@ -1,10 +1,4 @@
-<?php
-#	image_placer_gallery($imgname, $set, $width);
-
-#image_placer_gallery('cubefield', 'blender', 300);
-#image_placer_gallery('orgs_attack', 'blender', 300);
-#image_placer_gallery('boilplanet_FU', 'context_free', 300);
-?>
+<?php $title = 'Visual Portfolio'; ?>
 
 <div class="category_inlist">
 	<div class="rep_img">
