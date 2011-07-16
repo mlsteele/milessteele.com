@@ -20,7 +20,7 @@
 @primary-font: Arial, 'Helvetica Neue', Sans;
 
 .stealthLink {
-	A:link    {text-decoration: none; color: @primary-text-color;}
+	A:link	{text-decoration: none; color: @primary-text-color;}
 	A:visited {text-decoration: none; color: @primary-text-color;}
 	A:active  {text-decoration: none; color: @primary-text-color;}
 	A:hover   {text-decoration: none; color: @primary-text-color;}
@@ -28,7 +28,7 @@
 
 @link-color: #666;
 @link-color-active: @link-color + #222;
-A:link    {text-decoration: none; color: @link-color;}
+A:link	{text-decoration: none; color: @link-color;}
 A:visited {text-decoration: none; color: @link-color;}
 A:active  {text-decoration: none; color: @link-color-active;}
 A:hover   {text-decoration: none; color: @link-color-active;}
@@ -105,13 +105,13 @@ body {
 				}
 				
 				.navdiv {
-				    height: 0px;
-				    right: 0px;
-				    width: 0px;
-				    margin-right: 58px;
-				    
-				    border: 0px;
-				    border-top: 1px;
+					height: 0px;
+					right: 0px;
+					width: 0px;
+					margin-right: 58px;
+					
+					border: 0px;
+					border-top: 1px;
 					border-style: solid;
 					border-color: #666;
 					position: absolute;
@@ -186,4 +186,13 @@ body {
 		bottom: 0px;
 		clear: both;
 	}
+}
+
+#uparrow {
+	background-image: url(/images/arrow-up.png);
+	width: 9px;
+	height: 22px;
+	position: fixed;
+	bottom: -30px;
+	right: 30px;
 }

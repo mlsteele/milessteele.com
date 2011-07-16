@@ -52,3 +52,20 @@ $(document).ready(function() {
 		$(this).prev().animate(newstyle, animproperties);
 	});
 });
+
+// Up Arrow
+$(document).ready(function() {
+	var uparrow = $('#uparrow').hide();
+	var h = uparrow.height();
+	var r = parseInt( uparrow.css('right').replace(/px/, "") );
+	function mv(b) { uparrow.css({ 'bottom': b }) };
+	
+	function uparrowMaintain() {
+		var t = $(document).scrollTop()
+		t/5 < h ? mv(t/5-h) : mv(0);
+		$('#container').width() + r + 100 < $(window).width() ? uparrow.show() : uparrow.hide();
+	}
+	
+	$(window).scroll(function() {uparrowMaintain()});
+	$(window).resize(function() {uparrowMaintain()});
+});

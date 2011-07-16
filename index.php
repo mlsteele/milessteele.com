@@ -32,6 +32,7 @@
 			'centerOnScroll'	:	false,
 			'titleShow'			:	false,
 			'changeSpeed'		:	100,
+			'changeFade'        :   'fast',
 			'cyclic'			:	true
 		});
 	});
@@ -95,7 +96,7 @@
 		<div id="divisorL"></div>
 		<div id="nav">
 			<ul id="navlist">
-			    <div class="navdiv"></div>
+    			<div class="navdiv"></div>
 				<a href="blender"><li>Blender 3D</li></a>
 				<div class="navdiv"></div>
 				<a href="animation"><li>Animation</li></a>
@@ -118,9 +119,10 @@
 		</div>
 	</div>
 	<div id="footer">
-        <a href="javascript:$('body').animate({scrollTop: '0px'}, 200);">Top</a> | &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
+        <a href="javascript:$('body').animate({scrollTop: '0px'}, 250);">Top</a> | &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
     </div>
 </div>
+<a href="javascript:$('body').animate({scrollTop: '0px'}, 250);"><div id="uparrow"></div></a>
 
 </body>
 </html>
