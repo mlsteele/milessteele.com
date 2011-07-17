@@ -57,13 +57,16 @@ $(document).ready(function() {
 $(document).ready(function() {
 	var uparrow = $('#uparrow').hide();
 	var h = uparrow.height();
-	var r = parseInt( uparrow.css('right').replace(/px/, "") );
 	function mv(b) { uparrow.css({ 'bottom': b }) };
+	
+	uparrow.click(function() {
+		$('html,body').animate({scrollTop: '0px'});
+	});
 	
 	function uparrowMaintain() {
 		var t = $(document).scrollTop()
 		t/5 < h ? mv(t/5-h) : mv(0);
-		$('#container').width() + r + 100 < $(window).width() ? uparrow.show() : uparrow.hide();
+		$('#container').width() + 120 < $(window).width() ? uparrow.show() : uparrow.hide();
 	}
 	
 	$(window).scroll(function() {uparrowMaintain()});

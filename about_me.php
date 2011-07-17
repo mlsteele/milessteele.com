@@ -1,4 +1,4 @@
-<?php $title='About Me' ?>
+<?php $title='Miles Steele' ?>
 
 <img class="imgholder" style="float: left; padding: 10px 10px; margin-right: 10px;" src="/images/me_turtle.jpg" width="250" alt="self & turtle">
 

@@ -13,13 +13,14 @@
 
 <!-- fancybox -->
 <!-- Requires jQuery here btw -->
-<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.js"></script>
 <script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
 <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.1.css" type="text/css" media="screen">
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("a.fbox").fancybox({
+		    'padding'           :   0,
 			'transitionIn'		:	'elastic',
 			'transitionOut'		:	'fade',
 			'speedIn'			:	200,
@@ -28,11 +29,12 @@
 			'overlayOpacity'	:	.4,
 			'overlayColor'		:	'#000',
 			'hideOnOverlayClick':	true,
+			'closeOnScroll'     :   true,
 			'autoScale'			:	true,
 			'centerOnScroll'	:	false,
 			'titleShow'			:	false,
-			'changeSpeed'		:	100,
-			'changeFade'        :   'fast',
+			'changeSpeed'		:	0,
+			'changeFade'        :   100,
 			'cyclic'			:	true
 		});
 	});
@@ -69,7 +71,8 @@
 
 <?php
 	# image placer functions
-	function image_placer($imgname, $factor) {
+	function image_placer($imgname) {
+	    $factor = 1;
 		if ($factor == 1) {
 		    $dir = 660;
 		    $width = 600;
@@ -78,7 +81,17 @@
 		    $width = 300;
 		}
 		global $collection;
-		echo "<a href=\"images/$collection/fbox/$imgname.jpg\" class=\"fbox\" rel=\"$collection\"><img class=\"fimage\" src=\"images/$collection/$dir/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
+		
+		echo "<a
+		    href='images/$collection/fbox/$imgname.jpg'
+    		class='fbox'
+	    	rel='$collection'
+		    ><img
+    		class='fimage'
+	    	src='images/$collection/$dir/$imgname.jpg'
+		    width='$width'
+    		alt='collection item'
+		></a>";
 	}
 	
 	function image_placer_catlist($imgname, $set, $width) {
@@ -119,10 +132,10 @@
 		</div>
 	</div>
 	<div id="footer">
-        <a href="javascript:$('body').animate({scrollTop: '0px'}, 250);">Top</a> | &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
+        &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
     </div>
 </div>
-<a href="javascript:$('body').animate({scrollTop: '0px'}, 250);"><div id="uparrow"></div></a>
+<div id="uparrow"></div>
 
 </body>
 </html>

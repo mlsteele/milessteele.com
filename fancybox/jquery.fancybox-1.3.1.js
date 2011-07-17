@@ -268,6 +268,8 @@
 
 			if (currentOpts.centerOnScroll) {
 				$(window).bind("scroll.fb", $.fancybox.center);
+			} else if (currentOpts.closeOnScroll) {
+			    $(window).bind("scroll.fb", $.fancybox.close);
 			} else {
 				$(window).unbind("scroll.fb");
 			}
@@ -1032,6 +1034,7 @@
 		autoScale			:	true,
 		autoDimensions		:	true,
 		centerOnScroll		:	false,
+		closeOnScroll       :   false,
 
 		ajax				:	{},
 		swf					:	{ wmode: 'transparent' },
