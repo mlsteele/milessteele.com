@@ -1,8 +1,13 @@
-<?php $title='Page Not Found' ?>
+<?php $title='404 - Page Not Found' ?>
 
-<div class="pagehead">Oops!</div>
+<style >
+    #container #colL #symbol {
+        background-image: url(/images/onionFreakedV1.png);
+    }
+    
+    #FOFimg {
+        margin-top: 10px;
+    }
+</style>
 
-<div style="height: 300px; background: url(/images/eyepod.png) no-repeat right top;">
-<span>I could not find the page you requested.
-<br>Sorry! <a href="/">Home</a>.</span>
-</div>
+<img id="FOFimg" src="/images/4047.png"></img>

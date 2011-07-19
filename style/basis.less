@@ -17,7 +17,7 @@
 }
 
 @primary-text-color: #000;
-@primary-font: Arial, 'Helvetica Neue', Sans;
+@primary-font: Verdana, Arial, 'Helvetica Neue', Sans;
 
 .stealthLink {
 	A:link	{text-decoration: none; color: @primary-text-color;}
@@ -28,17 +28,18 @@
 
 @link-color: #666;
 @link-color-active: @link-color + #222;
-A:link	{text-decoration: none; color: @link-color;}
-A:visited {text-decoration: none; color: @link-color;}
-A:active  {text-decoration: none; color: @link-color-active;}
-A:hover   {text-decoration: none; color: @link-color-active;}
+A:link		{text-decoration: none; color: @link-color;}
+A:visited	{text-decoration: none; color: @link-color;}
+A:active	{text-decoration: none; color: @link-color-active;}
+A:hover		{text-decoration: none; color: @link-color-active;}
 
 body {
 	background-color: #fff;
 	// Font
 	color: @primary-text-color;
-	font-size: 11pt;
 	font-family: @primary-font;
+	font-size: 10pt;
+	line-height: 1.5em;
 	
 	// Flow
 	margin: 0;
@@ -48,7 +49,7 @@ body {
 @RCwidth: 600px;
 @LineSpacing: 20px;
 @Lstart: 40px;
-@Rstart: 10px;
+@Rstart: 30px;
 
 #container {
 	width: @LCwidth + @RCwidth + @LineSpacing;
@@ -139,6 +140,7 @@ body {
 			font-family: 'Times New Roman';
 			font-variant: small-caps;
 			font-size: 50px;
+			line-height: 50px;
 			letter-spacing: 4px;
 			padding-left: 30px;
 		}
@@ -154,15 +156,27 @@ body {
 		
 		#content {
 			padding-left: 3px;
-			padding-top: 10px;
+			padding-top: 5px;
 			
 			div {
-				margin-bottom: 30px;
+				float: left;
 			}
 		
-			.imgholder {
-//				background-color: #fff;
-//				padding: 10px;
+			.galimg {
+				margin-bottom: 30px;
+				
+				img {
+					border-style: solid;
+					border-color: #eee;
+					border-width: 1px;
+				}
+			}
+			
+			.alibi {
+				width: @RCwidth - 15*2;
+				padding: 15px;
+				margin-bottom: 30px;
+				
 //				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
 			}
 			
@@ -171,21 +185,31 @@ body {
 				margin: 50px;
 				.dropBoxShadow(0, 0, 20px, 0, #ccc);
 			}
-			
-			.exegesis {
-				padding: 15px;
-				.dropBoxShadowInset(0, 0, 20px, 0, #ccc);
-			}
 		}
 	}
 	
-	#footer {	
+	#footer {
 		font-size: 11px;
 		text-align: center;
-		padding-bottom: 10px;
+		padding: 10px;
 		bottom: 0px;
 		clear: both;
+		
+		border-style: dotted;
+		border-color: #ccc;
+		border-width: 0px;
+		border-top-width: 1px;
 	}
+}
+
+#topright {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	width: 80px;
+	height: 80px;
+	background-image: url(/images/topright.png);
 }
 
 #uparrow {

@@ -71,15 +71,7 @@
 
 <?php
 	# image placer functions
-	function image_placer($imgname) {
-	    $factor = 1;
-		if ($factor == 1) {
-		    $dir = 660;
-		    $width = 600;
-		} elseif ($factor == .5) {
-		    $dir = 300;
-		    $width = 300;
-		}
+	function image_placer($imgname, $dir, $width) {
 		global $collection;
 		
 		echo "<a
@@ -87,11 +79,31 @@
     		class='fbox'
 	    	rel='$collection'
 		    ><img
-    		class='fimage'
 	    	src='images/$collection/$dir/$imgname.jpg'
 		    width='$width'
     		alt='collection item'
 		></a>";
+	}
+	
+	function ci($imgname) {
+	    echo "<div class='galimg'>";
+	    image_placer($imgname, 660, 600);
+	    echo "</div>";
+	}
+	
+	function ci2($imgname1, $imgname2) {
+	    echo "<div class='galimg'>";
+	    image_placer($imgname1, 300, 296.5);
+	    image_placer($imgname2, 300, 296.5);
+	    echo "</div>";
+	}
+	
+	function ci3($imgname1, $imgname2, $imgname3) {
+	    echo "<div class='galimg'>";
+	    image_placer($imgname1, 660, 600);
+	    image_placer($imgname2, 300, 299.9);
+	    image_placer($imgname3, 300, 299.9);
+	    echo "</div>";
 	}
 	
 	function image_placer_catlist($imgname, $set, $width) {
@@ -135,6 +147,7 @@
         &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
     </div>
 </div>
+<div id="topright"></div>
 <div id="uparrow"></div>
 
 </body>
