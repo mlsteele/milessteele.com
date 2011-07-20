@@ -1,30 +1,56 @@
-<?php $title='Context Free' ?>
+<?php
+$title='Context Free';
+$collection = 'context_free';
+?>
 
-<div class="pagehead">Context Free</div>
+<?php ci('nexuses_TVB_small'); ?>
+
+<div class="alibi">
+    Lorem Ipsum Dolor seta sit. The se are mad ewith contex tFree. wHWic is a mtoaid
+    fjtier resupctisivyt and all ofsrh sof the roht cols tuff.
+    <br><br>
+    for ahto tekr program the aghsld tis thjus t long.! fjie
+    ahto tekr program the aghsld tis thjus t long.! fjie ahto tekr program the aghsld tis thjus t long.! fjie ahto tekr program the aghsld tis thjus t long.! fjie
+</div>
+
+
+<?php ci('fan_SXK'); ?>
+<div class="alibi">
+    For example, the code for the above image is just:
+    <br><br>
+    >> -- <
+    < -df <<
+    d.fd- __.> .>
+    _,<;;;;
+</div>
+
+
+
+<?php ci('boilplanet_FU'); ?>
+
+<?php ci('nexuses_morang_WTH'); ?>
+
+
+<?php ci('nexwhirl_WWO'); ?>
+<?php ci('boilplanet_tile_DNF'); ?>
+<?php ci('brain_cloud_VFV'); ?>
+
+<?php ci('boilplanet_YAM'); ?>
+<?php ci('boilplanet_UNT2'); ?>
+<?php ci('nexuses_morang_WTI'); ?>
+<?php ci('boilplanet_YAM_warp'); ?>
+
+
+
+<?php ci('nexuses_WUE'); ?>
+
+<?php ci('roots_PRE'); ?>
+
+<?php ci2('omforest_QCP', 'spliral_tile_edo'); ?>
+
+<?php ci('spliral_BPK'); ?>
+
 
 <?php
-#	image_placer($imgname, $width);
-$collection = 'context_free';
-
-image_placer('boilplanet_FU',  600);
-image_placer('nexuses_TVB_small',  300);
-image_placer('nexuses_morang_WTI',  660);
-image_placer('nexwhirl_WWO',  300);
-image_placer('boilplanet_tile_DNF',  300);
-image_placer('fan_SXK',  660);
-image_placer('boilplanet_UNT2',  300);
-image_placer('brain_cloud_VFV',  300);
-image_placer('nexuses_morang_WTH',  660);
-
-image_placer('boilplanet_YAM_warp',  660);
-image_placer('boilplanet_YAM',  300);#image_placer('boilplanet_YAM_gc',  300);
-image_placer('nexuses_WUE',  300);
-
-image_placer('spliral_tile_edo',  300);
-image_placer('roots_PRE',  300);
-
-image_placer('omforest_QCP',  300);
-image_placer('spliral_BPK',  300);
-
 $collection = '';
 ?>

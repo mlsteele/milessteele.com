@@ -147,7 +147,7 @@
         &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
     </div>
 </div>
-<div id="topright"></div>
+<a id="topright" href="about_me"></a>
 <div id="uparrow"></div>
 
 </body>

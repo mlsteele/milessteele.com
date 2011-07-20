@@ -14,7 +14,6 @@ programming
 image frames
 pro scan
 clean directory
-close fbox on scroll - jquery if need be
 write 'articles' first, then extract for home
 file exchange/skybox forwarding
 
@@ -26,3 +25,7 @@ be able to escape largest fbox images
 minify js
 
 about me - link and page
+
+fix scroll layout jankyness
+
+about me horizontal scroll align

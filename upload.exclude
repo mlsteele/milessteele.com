@@ -1,0 +1,8 @@
+upload
+upload.exclude
+
+.DS_Store
+.git
+
+images/*/source
+images/*/original
