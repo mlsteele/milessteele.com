@@ -16,6 +16,15 @@
   -moz-border-radius: @radius;
 }
 
+.selectColor (@color) {
+	::selection {
+		background: @color;
+	}
+	::-moz-selection {
+			background: @color;
+	}
+}
+
 @primary-text-color: #000;
 @primary-font: Verdana, Arial, 'Helvetica Neue', Sans;
 
@@ -161,7 +170,26 @@ body {
 			div {
 				float: left;
 			}
-		
+			
+			.left{float: left;}
+			.right{float: right;}
+			
+			//.selectColor(#fff);
+			pre {
+				padding: 15px;
+				
+				font-size: 8pt;
+				line-height: 1.2em;
+				
+				color: #46705C;
+				background-color: #DEF5E4;
+				
+				.functionName {color: #45AD87;}
+				.operator {color: #00f;}
+				.recursiveCall {color: #CF5348;}
+				.primitiveCall {color: #C2C200;}
+			}
+			
 			.galimg {
 				margin-bottom: 30px;
 				

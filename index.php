@@ -92,10 +92,13 @@
 	}
 	
 	function ci2($imgname1, $imgname2) {
-	    echo "<div class='galimg'>";
-	    image_placer($imgname1, 300, 296.5);
-	    image_placer($imgname2, 300, 296.5);
+	    echo "<div class='galimg left'>";
+	    image_placer($imgname1, 300, 280);
 	    echo "</div>";
+	    echo "<div class='galimg right'>";
+	    image_placer($imgname2, 300, 280);
+	    echo "</div>";
+	    
 	}
 	
 	function ci3($imgname1, $imgname2, $imgname3) {

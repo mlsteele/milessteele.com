@@ -1,4 +1,12 @@
-<?php $title='Miles Steele' ?>
+<?php
+$title='Miles Steele'
+?>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#topright').hide();
+});
+</script>
 
 <img class="imgholder" style="float: left; padding: 10px 10px; margin-right: 10px;" src="/images/me_turtle.jpg" width="250" alt="self & turtle">
 
