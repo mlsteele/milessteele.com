@@ -6,13 +6,17 @@ $collection = 'context_free';
 <?php ci('nexuses_TVB_small'); ?>
 
 <div class="alibi">
-    Context Free is a mini language and renderer packaged into one. The 'vision' of the language
-    is recursive expression of shapes. 
-    <br><br>
-    for ahto tekr program the aghsld tis thjus t long.! fjie
-    ahto tekr program the aghsld tis thjus t long.! fjie ahto tekr program the aghsld tis thjus t long.! fjie ahto tekr program the aghsld tis thjus t long.! fjie
+    <a href="http://www.contextfreeart.org/">Context Free</a>
+     is a mini language for describing recursive shapes.
+    Every Context Free design is expressed as a collection of
+    three primitives (circle, square, and triangle) as well as transformations
+    to be applied recursively to these shapes. Each method represents several levels
+    and the shape can pop between methods via a pseudo-random number generator which
+    chooses which of the multiple definitions of a method to use.
+    The language feels organic, being ideal for trees and ferns and other such natural patterns.
 </div>
 
+<?php ci('ferns2'); ?>
 
 <?php ci('fan_SXK'); ?>
 <div class="alibi">
@@ -77,6 +81,12 @@ rule <span class="functionName">SPREET</span> .1 {
 <?php ci2('boilplanet_UNT2', 'boilplanet_tile_DNF'); ?>
 
 <?php ci('boilplanet_YAM'); ?>
+<div class="alibi">
+    I discovered Context Free in 2010 and still find it an almost meditative form of expression.
+    The language is simple and fun to write.
+    And for once in the art world, rendering is really fast! Which means exploring
+    through iterating is a breeze.
+</div>
 
 <?php ci('nexuses_morang_WTI'); ?>
 <?php ci2('boilplanet_YAM_warp', 'nexuses_WUE'); ?>
