@@ -5,7 +5,7 @@
 <div style="float: left; height: auto; overflow: hidden;">
 	<img class="imageholder" src="/images/me_turtle.png" width="300" alt="self & turtle"><br>
 		<br><span class="cathead">Contact</span><br>
-	<p>Ok, so here's a list of stuff that actually has to go here</p>
+	<p>Ok, so here's a list of stuff that actually might go here</p>
 	<ul>
 	<li>name</li>
 	<li>location</li>

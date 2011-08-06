@@ -21,7 +21,7 @@ $collection = 'context_free';
 <?php ci('fan_SXK'); ?>
 <div class="alibi">
     The source for the above image:
-    <br><br>
+    <br>
     <pre style="float: left;">startshape FAN
 
 rule <span class="functionName">FAN</span> {
@@ -85,7 +85,7 @@ rule <span class="functionName">SPREET</span> .1 {
     I discovered Context Free in 2010 and still find it an almost meditative form of expression.
     The language is simple and fun to write.
     And for once in the art world, rendering is really fast! Which means exploring
-    through iterating is a breeze.
+    through iteration is a breeze.
 </div>
 
 <?php ci('nexuses_morang_WTI'); ?>

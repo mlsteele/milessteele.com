@@ -27,9 +27,9 @@ $(document).ready(function() {
 	var nav = $('#nav');
 	
 	var animproperties = {
-		'duration': 100,
-		'easing': 'linear',
-		'queue': false
+		duration: 100,
+		easing: 'linear',
+		queue: false
 	}
 	
 	$('#nav a').hover(function(e) {

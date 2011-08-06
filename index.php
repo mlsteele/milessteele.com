@@ -5,14 +5,14 @@
 <meta name="description" content="The image portfolio of Miles Steele.">
 
 <link rel="shortcut icon" href="/images/micon/micon.ico">
-<link rel="stylesheet" href="/style/basis.css" type="text/css">
+<link rel="stylesheet" href="/style/common.css" type="text/css">
 
-<script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="/js/vendor/jquery-1.6.1.min.js"></script>
 
-<script type="text/javascript" src="/js/basis.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
 
 <!-- fancybox -->
-<!-- Requires jQuery here btw -->
+<!-- Requires jQuery -->
 <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.1.js"></script>
 <script type="text/javascript" src="/fancybox/jquery.easing-1.3.pack.js"></script>
 <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>

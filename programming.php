@@ -5,10 +5,12 @@
 <!-- <script type="text/javascript" src="/js/jquery-1.6.1.min.js"></script> -->
 <style type="text/css">
 body {
-	font-family: 'Arial, Helvetica';
+    margin-left: 15px;
+    margin-top: 0px;
 }
 
 #teapot {
+    font-family: 'Arial, Helvetica';
 	position: absolute;
 	width: auto;
 }

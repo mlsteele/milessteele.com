@@ -10,7 +10,7 @@ $collection = 'blender';
 	from modeling & rendering to video processing and compositing.
 	Blender is a fantastic creative tool and can be found at <a href="http://blender.org">blender.org</a>.
 	I discovered Blender at <a href="http://siggraph.org/s2008/">Siggraph '08</a>.
-	This gallery is a selection of my Blender creations from around the summer of 2010.
+	This gallery is a selection of my Blender creations since the summer of 2010.
 </div>
 
 <?php ci('wallp'); ?>

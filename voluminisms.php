@@ -1,23 +1,23 @@
 <?php
-$title='Voluminisms'
+$title='Voluminisms';
 $collection = 'voluminisms';
 ?>
 
-What is a voluminism? It has something to do with volume, a large vast &lt;noun&gt;scape.
-<br>But more importantly, first hit on google.
 
-<?php
+<!-- <?php ci('fruitjuice-pink-purple'); ?> -->
+<!-- <?php ci('fruitjuice-green-yellow'); ?> -->
 
-image_placer('fruitjuice-blue-cyan', 660);
-image_placer('fruitjuice-orange-red', 300);
-image_placer('fruitjuice-pink-purple', 300);
+<?php ci('fruitjuice-orange-red'); ?>
 
-image_placer('synthetic', 660);
-image_placer('synthetic-subtract', 300);
-image_placer('fruitjuice-green-yellow', 300);
+<div class="alibi">
+    What is a voluminism? It has something to do with volume, a large vast &lt;noun&gt;scape.
+    <br>But more importantly, first hit on google.
+</div>
 
-image_placer('smoke64-emits', 660);
-image_placer('sierpinski_swirl');
+<?php ci('synthetic'); ?>
+<!-- <?php ci('fruitjuice-blue-cyan'); ?> -->
+<!-- <?php ci('synthetic-subtract'); ?> -->
+<?php ci('smoke64-emits'); ?>
+<!-- <?php ci('sierpinski_swirl'); ?> -->
 
-$collection = '';
-?>
+<?php $collection = ''; ?>
