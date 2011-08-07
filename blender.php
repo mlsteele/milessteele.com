@@ -20,7 +20,7 @@ $collection = 'blender';
 
 <div class="alibi">
 	These popped out of a habit of folding origami cubes in my summer basement-home when away from the media lab.
-	They are also inspired by Jeannine Mosely's origami menger sponge.
+	They are inspired by Jeannine Mosely's origami menger sponge.
 </div>
 
 

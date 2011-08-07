@@ -54,6 +54,7 @@ body {
 	
 	// Flow
 	margin: 0;
+	overflow-y:scroll;
 }
 
 @LCwidth: 200px;
@@ -87,7 +88,8 @@ body {
 //		}
 		
 		#divisorL {
-			background-image: url(/images/divisorL.png);
+			visibility: hidden;
+			//background-image: url(/images/divisorL.png);
 			background-repeat: no-repeat;
 			background-position: 100% 0px;
 			
@@ -135,7 +137,8 @@ body {
 	}
 	
 	#divisorM {
-		background-image: url(/images/divisorM.png);
+		visibility: hidden;
+		//background-image: url(/images/divisorM.png);
 		background-repeat: repeat-y;
 		background-position: 0px 0px;
 		
@@ -155,11 +158,23 @@ body {
 			font-size: 50px;
 			line-height: 50px;
 			letter-spacing: 4px;
+			
+			float:left;
+			
+			padding-right: 30px;
 			padding-left: 30px;
+			margin-top: 0px;
+			margin-bottom: 20px;
+			
+			border-style: solid;
+			border-color: #000;
+			border-width: 0 0 2px 0;
+			
 		}
 		
 		#divisorR {
-			background-image: url(/images/divisorR.png);
+			visibility: hidden;
+			//background-image: url(/images/divisorR.png);
 			background-repeat: no-repeat;
 			background-position: 0px 0px;
 			
@@ -214,9 +229,16 @@ body {
 			
 			.vidcan {
 				background-color: #fff;
+				float: left;
+				clear: both;
 				margin: 35px;
 				padding: 15px;
 				.dropBoxShadow(0, 0, 20px, 0, #ccc);
+			}
+			
+			.homeimage {
+				margin-top: 0px;
+				margin-bottom: 0px;
 			}
 		}
 	}

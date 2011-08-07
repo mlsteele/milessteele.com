@@ -45,3 +45,16 @@ function video_placer($vid) {
 <?php video_placer(2685879); ?> Multiple Arrays
 <?php video_placer(3536639); ?> Tipover
  -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var duration =    1e3 * 1;
+	var timebetween = 1e3 * .3;
+	$.fn.reverse = [].reverse;
+	$('.vidcan').reverse().hide().each(function(i, e){
+ 		setTimeout(function(){
+			$(e).show(duration);
+ 		}, i * timebetween)
+	});
+});
+</script>
