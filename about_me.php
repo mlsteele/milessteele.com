@@ -8,17 +8,23 @@ $(document).ready(function(){
 });
 </script>
 
-<img class="imgholder" style="float: left; padding: 10px 10px; margin-right: 10px;"
+<img class="imgholder" style="float: left; clear: both; padding: 10px 10px; margin-right: 10px;"
 width="150" alt=""
-src="/images/me-horse.jpg">
+src="/images/pt3.png">
 
 <div class="exegesis" style="float: left; width: 270px;">
+</div>
+
 I am a digital artist, programmer, and unicyclist located in Amherst, MA.
 I work with open source software whenever I can.
-So far I have developed proficiency of varying degrees in <a href="http://blender.org">Blender 3D</a>, <a href="http://gimp.org/">Gimp</a>, <a href="http://inkscape.org/">Inkscape</a>, <a href="http://processing.org">Processing</a>, <a href="http://http://rsbweb.nih.gov/ij/">imageJ</a>, and <a href="http://contextfreeart.org/">Context Free</a>.
 
-I have not built enough things, come over and teach me about electronics.
-</div>
+Stuff I've played with
+<a href="http://blender.org">Blender 3D</a>,
+<a href="http://gimp.org/">Gimp</a>,
+<a href="http://inkscape.org/">Inkscape</a>,
+<a href="http://processing.org">Processing</a>,
+<a href="http://http://rsbweb.nih.gov/ij/">imageJ</a>,
+<a href="http://contextfreeart.org/">Context Free</a>.
 
 <div class="exegesis" style="clear: both;">
 Besides graphics, I am interested in how the mind works.
@@ -35,7 +41,7 @@ What is the next interface between minds?
 <div class="exegesis" style="clear: both;">
 What about the onion/droplet you ask?
 Well I was drawing this site and I needed something square to put in the corner.
-I'm not very good at drawing squares.
+I'm not very good at drawing something square.
 </div>
 
 <!--<div class="text">You can find some of my older Blender stuff at my <a href="http://vimeo.com/msteele">Vimeo page</a>.</div>-->

@@ -1,8 +1,7 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(blender|animation|context_free|voluminisms|about_me|404)$ ?pageid=$1
+RewriteRule ^(blender|animation|context_free|voluminisms|about_me|404)$ index.php?pageid=$1
 RewriteRule ^programming$ programming.php
-RewriteRule ^(uut)$ $1.php
 
 Options -Indexes
 
