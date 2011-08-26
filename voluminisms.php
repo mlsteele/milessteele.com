@@ -10,8 +10,9 @@ $collection = 'voluminisms';
 <?php ci('fruitjuice-orange-red'); ?>
 
 <div class="alibi">
-    What is a voluminism? It has something to do with volume, a large vast &lt;noun&gt;scape.
-    <br>But more importantly, first hit on google.
+	What is a voluminism?<br>
+	Something big-ish and spacey. A google search leads to these beautiful paintings by 
+	<a href="http://www.reginaortega.es/voluminismo.html">Regina Ortega</a>
 </div>
 
 <?php ci('synthetic'); ?>

@@ -17,6 +17,10 @@ $collection = 'context_free';
 </div>
 
 <?php ci('ferns2'); ?>
+<div class="alibi">
+    I'm working on my own implementation of Context Free in Javascript which will have
+    dynamics built in. Expect some with some waving, morphing, and growing designs in the future.
+</div>
 
 <?php ci('fan_SXK'); ?>
 <div class="alibi">
