@@ -147,10 +147,10 @@
 		</div>
 	</div>
 	<div id="footer">
-        &#169; 2011 <a href="about_me">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
+        &#169; 2011 <a href="about">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
     </div>
 </div>
-<a id="topright" href="about_me"></a>
+<a id="topright" href="about"></a>
 <div id="uparrow"></div>
 
 </body>
