@@ -6,3 +6,4 @@ upload.exclude
 
 images/*/source
 images/*/original
+*.xcf
