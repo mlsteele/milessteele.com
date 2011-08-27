@@ -1,5 +1,4 @@
 #!/bin/bash
 
 cd `dirname $0`
-
 rsync -avzP --delete --exclude-from upload.exclude ./ miles@milessteele.com:staging

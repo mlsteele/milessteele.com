@@ -43,9 +43,8 @@ $collection = 'blender';
 <?php $collection = ''; ?>
 
 
-
 <!--
-Well I tried but simplicity and existing UI conventions won again.
+Well, I tried. But simplicity and existing UI conventions won again.
 <script type="text/javascript">
 $(document).ready(function() {
 	$('body').append('<div id="gup" style="position: fixed; top: 40px; right: 0px;">UP</div>');
@@ -64,7 +63,7 @@ $(document).ready(function() {
 		console.log(ci);
 		box = getBox(ci);
 		$('html, body').animate({
-	    	scrollTop: box.offset().top - box.children('img').height()
+				scrollTop: box.offset().top - box.children('img').height()
 		}, 200);
 	}
 	

@@ -20,22 +20,22 @@
 <script type="text/javascript">
 	$(document).ready(function(){
 		$("a.fbox").fancybox({
-		    'padding'           :   0,
-			'transitionIn'		:	'elastic',
-			'transitionOut'		:	'fade',
-			'speedIn'			:	200,
-			'speedOut'			:	100,
-			'overlayShow'		:	true,
-			'overlayOpacity'	:	.4,
-			'overlayColor'		:	'#000',
-			'hideOnOverlayClick':	true,
-			'closeOnScroll'     :   true,
-			'autoScale'			:	true,
-			'centerOnScroll'	:	false,
-			'titleShow'			:	false,
-			'changeSpeed'		:	0,
-			'changeFade'        :   100,
-			'cyclic'			:	true
+			'padding':             0,
+			'transitionIn':        'elastic',
+			'transitionOut':       'fade',
+			'speedIn':             200,
+			'speedOut':            100,
+			'overlayShow':         true,
+			'overlayOpacity':      .4,
+			'overlayColor':        '#000',
+			'hideOnOverlayClick':  true,
+			'closeOnScroll':       true,
+			'autoScale':           true,
+			'centerOnScroll':      false,
+			'titleShow':           false,
+			'changeSpeed':         0,
+			'changeFade':          100,
+			'cyclic':              true
 		});
 	});
 </script>
@@ -75,38 +75,38 @@
 		global $collection;
 		
 		echo "<a
-		    href='images/$collection/fbox/$imgname.jpg'
-    		class='fbox'
-	    	rel='$collection'
-		    ><img
-	    	src='images/$collection/$dir/$imgname.jpg'
-		    width='$width'
-    		alt='collection item'
+			href='images/$collection/fbox/$imgname.jpg'
+			class='fbox'
+			rel='$collection'
+			><img
+			src='images/$collection/$dir/$imgname.jpg'
+			width='$width'
+			alt='collection item'
 		></a>";
 	}
 	
 	function ci($imgname) {
-	    echo "<div class='galimg'>";
-	    image_placer($imgname, 660, 600);
-	    echo "</div>";
+		echo "<div class='galimg'>";
+		image_placer($imgname, 660, 600);
+		echo "</div>";
 	}
 	
 	function ci2($imgname1, $imgname2) {
-	    echo "<div class='galimg left'>";
-	    image_placer($imgname1, 300, 280);
-	    echo "</div>";
-	    echo "<div class='galimg right'>";
-	    image_placer($imgname2, 300, 280);
-	    echo "</div>";
-	    
+		echo "<div class='galimg left'>";
+		image_placer($imgname1, 300, 280);
+		echo "</div>";
+		echo "<div class='galimg right'>";
+		image_placer($imgname2, 300, 280);
+		echo "</div>";
+		
 	}
 	
 	function ci3($imgname1, $imgname2, $imgname3) {
-	    echo "<div class='galimg'>";
-	    image_placer($imgname1, 660, 600);
-	    image_placer($imgname2, 300, 299.9);
-	    image_placer($imgname3, 300, 299.9);
-	    echo "</div>";
+		echo "<div class='galimg'>";
+		image_placer($imgname1, 660, 600);
+		image_placer($imgname2, 300, 299.9);
+		image_placer($imgname3, 300, 299.9);
+		echo "</div>";
 	}
 	
 	function image_placer_catlist($imgname, $set, $width) {
@@ -124,7 +124,7 @@
 		<div id="divisorL"></div>
 		<div id="nav">
 			<ul id="navlist">
-    			<div class="navdiv"></div>
+				<div class="navdiv"></div>
 				<a href="blender"><li>Blender 3D</li></a>
 				<div class="navdiv"></div>
 				<a href="animation"><li>Animation</li></a>
@@ -147,8 +147,8 @@
 		</div>
 	</div>
 	<div id="footer">
-        &#169; 2011 <a href="about">Miles Steele</a> <!--| <a href="">Something Interesting</a>-->
-    </div>
+		&#169; 2011 &#8764 <a href="about">Miles Steele</a> <span class="uplink">&#8764 <a href="javascript:void(0)" class="uplink">Top</a></span>
+	</div>
 </div>
 <a id="topright" href="about"></a>
 <div id="uparrow"></div>
