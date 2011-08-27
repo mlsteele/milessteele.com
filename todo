@@ -34,3 +34,5 @@ fix context free highlight color
 
 inspiration:
 http://cameron.io/
+
+offset bottom (sliding) to fix uplink layout offset

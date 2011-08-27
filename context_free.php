@@ -11,15 +11,15 @@ $collection = 'context_free';
     Every Context Free design is expressed as a collection of
     three primitives (circle, square, and triangle) as well as transformations
     to be applied recursively to these shapes. Each method represents several levels
-    and the shape can pop between methods via a pseudo-random number generator which
+    and the shape can pop between methods via a pseudo-random number generator that
     chooses which of the multiple definitions of a method to use.
-    The language feels organic, being ideal for trees and ferns and other such natural patterns.
+    The language feels organic, ideal for trees and ferns and other such natural patterns.
 </div>
 
 <?php ci('ferns2'); ?>
 <div class="alibi">
-    I'm working on my own implementation of Context Free in Javascript which will have
-    dynamics built in. Expect some with some waving, morphing, and growing designs in the future.
+    I am working on my own implementation of Context Free in Javascript which will have
+    dynamics built in. Expect some waving, morphing, and growing designs in the future.
 </div>
 
 <?php ci('fan_SXK'); ?>

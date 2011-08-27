@@ -68,7 +68,21 @@ $(document).ready(function() {
 		t/5 < h ? mv(t/5-h) : mv(0);
 		$('#container').width() + 120 < $(window).width() ? uparrow.show() : uparrow.hide();
 	}
-	
 	$(window).scroll(function() {uparrowMaintain()});
 	$(window).resize(function() {uparrowMaintain()});
+	
+	function uplinkMaintain() {
+	  var ul = $('#footer .uplink');
+	  if ($(window).height() < $(document).height()) {
+	    ul.stop(true).animate({opacity: 1}, 500)
+		} else {
+	    ul.stop(true).animate({opacity: 0}, 500);
+	  }
+	}
+	uplinkMaintain();
+  $(window).resize(function() {uplinkMaintain()});
+	
+	$('#footer .uplink').click(function() {
+		$('html,body').animate({scrollTop: '0px'});
+	});
 });

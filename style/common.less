@@ -158,20 +158,21 @@ body {
 			font-size: 50px;
 			line-height: 50px;
 			letter-spacing: 4px;
-			
-			float:left;
+			text-align: center;
 			
 			padding-right: 30px;
 			padding-left: 30px;
 			margin-top: 0px;
 			margin-bottom: 20px;
 			
-			border-style: solid;
-			border-color: #000;
-			border-width: 0 0 2px 0;
+			//border-style: solid;
+			//border-color: #ccc;
+			//border-width: 0 0 1px 0;
+
 			
 		}
 		
+/*
 		#divisorR {
 			visibility: hidden;
 			//background-image: url(/images/divisorR.png);
@@ -181,14 +182,11 @@ body {
 			width: @RCwidth + @LineSpacing;
 			height: @LineSpacing;
 		}
+*/
 		
 		#content {
 			padding-left: 3px;
 			padding-top: 5px;
-			
-			div {
-				float: left;
-			}
 			
 			.left{float: left;}
 			.right{float: right;}
@@ -213,13 +211,14 @@ body {
 				margin-bottom: 30px;
 				
 				img {
-					border-style: solid;
-					border-color: #eee;
-					border-width: 1px;
+					//border-style: solid;
+					//border-color: #eee;
+					//border-width: 1px;
 				}
 			}
 			
 			.alibi {
+				float: left;
 				width: @RCwidth - 15*2;
 				padding: 15px;
 				margin-bottom: 30px;
@@ -237,8 +236,16 @@ body {
 			}
 			
 			.homeimage {
-				margin-top: 0px;
-				margin-bottom: 0px;
+				width: 550px;
+				margin: 10px auto;
+			}
+			
+			.aboutpage {
+				.visage {
+					float: right;
+					margin-left: 30px;
+					margin-top: 5px;
+				}
 			}
 		}
 	}
@@ -255,17 +262,21 @@ body {
 		border-color: #ccc;
 		border-width: 0px;
 		border-top-width: 1px;
+		
+		.uplink {
+			opacity: 0;
+		}
 	}
 }
 
-#topright {
-	position: absolute;
+#aboutcurl {
+	position: fixed;
 	top: 0px;
 	right: 0px;
 	
 	width: 80px;
 	height: 80px;
-	background-image: url(/images/topright.png);
+	background-image: url(/images/aboutcurl.png);
 }
 
 #uparrow {

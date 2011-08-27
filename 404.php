@@ -10,4 +10,6 @@
 	}
 </style>
 
-<img id="FOFimg" src="/images/404.7.2.png"></img>
+<a href="/">
+  <img id="FOFimg" src="/images/404.7.2.png"></img>
+</a>

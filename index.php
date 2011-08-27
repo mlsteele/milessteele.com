@@ -141,16 +141,15 @@
 	<div id="divisorM"></div>
 	<div id="colR">
 		<div id="pagetitle"><?php echo $title; ?></div>
-		<div id="divisorR"></div>
 		<div id="content">
 			<?php echo "$content_buffer"; ?>
 		</div>
 	</div>
 	<div id="footer">
-		&#169; 2011 &#8764 <a href="about">Miles Steele</a> <span class="uplink">&#8764 <a href="javascript:void(0)" class="uplink">Top</a></span>
+		<span>&#169; 2011 &#8764 </span><a href="about">Miles Steele</a><span class="uplink"> &#8764 <a href="javascript:void(0)" class="uplink">Top</a></span>
 	</div>
 </div>
-<a id="topright" href="about"></a>
+<a id="aboutcurl" href="about"></a>
 <div id="uparrow"></div>
 
 </body>

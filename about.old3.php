@@ -4,7 +4,7 @@ $title='Miles Steele'
 
 <script type="text/javascript">
 $(document).ready(function(){
-    $('#topright').hide();
+    $('#aboutcurl').hide();
 });
 </script>
 
