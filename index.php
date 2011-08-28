@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
@@ -123,19 +123,19 @@
 		<a id="symbol" href="/"></a>
 		<div id="divisorL"></div>
 		<div id="nav">
-			<ul id="navlist">
-				<div class="navdiv"></div>
-				<a href="blender"><li>Blender 3D</li></a>
-				<div class="navdiv"></div>
-				<a href="animation"><li>Animation</li></a>
-				<div class="navdiv"></div>
-				<a href="context_free"><li>Context Free</li></a>
-				<div class="navdiv"></div>
-				<a href="voluminisms"><li>Voluminisms</li></a>
-				<div class="navdiv"></div>
-				<a href="programming"><li>Programming</li></a>
-				<div class="navdiv"></div>
-			</ul>
+			<div class="navdiv"></div>
+			<a href="blender">Blender 3D</a>
+			<div class="navdiv"></div>
+			<a href="animation">Animation</a>
+			<div class="navdiv"></div>
+			<a href="context_free">Context Free</a>
+			<div class="navdiv"></div>
+			<a href="voluminisms">Voluminisms</a>
+			<div class="navdiv"></div>
+			<!--
+			<a href="programming">Programming</a>
+			<div class="navdiv"></div>
+			-->
 		</div>
 	</div>
 	<div id="divisorM"></div>
@@ -146,7 +146,7 @@
 		</div>
 	</div>
 	<div id="footer">
-		<span>&#169; 2011 &#8764 </span><a href="about">Miles Steele</a><span class="uplink"> &#8764 <a href="javascript:void(0)" class="uplink">Top</a></span>
+		<span>&#169; 2011 &#8764; </span><a href="about">Miles Steele</a><span class="uplink"> &#8764; <a href="javascript:void(0)" class="uplink">Top</a></span>
 	</div>
 </div>
 <a id="aboutcurl" href="about"></a>

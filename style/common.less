@@ -105,35 +105,35 @@ body {
 			float: right;
 			position: relative;
 			
-			ul {
 			margin-top: 0px;
 			list-style-type: none;
 			text-align: right;
 			.stealthLink;
 			
-				li {
-					padding: 10px 10px;
-					
-					font-family: Didot, Verdana;
-					letter-spacing: 1.5px;
-					
-					border-style: solid;
-					border-color: #666;
-					border-width: 0px 0px;
-				}
+			a {
+				display: block;
 				
-				.navdiv {
-					height: 0px;
-					right: 0px;
-					width: 0px;
-					margin-right: 58px;
-					
-					border: 0px;
-					border-top: 1px;
-					border-style: solid;
-					border-color: #bbb;
-					position: absolute;
-				}
+				padding: 10px 10px;
+				
+				font-family: Didot, 'Times New Roman', @primary-font;
+				letter-spacing: 1.5px;
+				
+				border-style: solid;
+				border-color: #666;
+				border-width: 0px 0px;
+			}
+			
+			.navdiv {
+				height: 0px;
+				right: 0px;
+				width: 0px;
+				margin-right: 58px;
+				
+				border: 0px;
+				border-top: 1px;
+				border-style: solid;
+				border-color: #bbb;
+				position: absolute;
 			}
 		}
 	}
@@ -237,10 +237,12 @@ body {
 				clear: both;
 				margin: 35px;
 				padding: 15px;
+				border-width: 0px;
 				.dropBoxShadow(0, 0, 20px, 0, #ccc);
 			}
 			
 			.homeimage {
+				display: block;
 				width: 520px;
 				margin: 10px auto;
 			}
@@ -252,6 +254,12 @@ body {
 					float: right;
 					margin-left: 30px;
 					margin-top: 5px;
+				}
+				
+				.emaillink {
+					position: absolute;
+					left: 50%;
+					margin-top: 25px;
 				}
 			}
 		}

@@ -9,7 +9,7 @@ $(document).ready(function(){
 </script>
 
 <div class="aboutpage">
-	<img class="visage" width="160" alt="visage" src="/images/me-diag.jpg">
+	<img class="visage" width="160" alt="visage" src="/images/me-diag-rsz.jpg">
 	
 	<p>
 		I am a digital artist, programmer, and unicyclist located in Amherst, MA.
@@ -39,5 +39,9 @@ $(document).ready(function(){
 		into a new kind of link between people.
 	</p>
 	
-	<div class="emaillink"></div>
+	<div class="emaillink">
+		<a href="mailto:miles@milessteele.com">
+			<img class="emaillink" src="/images/emaillink.png" alt="email-link">
+		</a>
+	</div>
 </div>
