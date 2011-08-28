@@ -39,9 +39,9 @@ C++
 
 I am interested in how the mind works.
 Specifically the storage and encoding of memories.
-For me, the best way to communicate a story is through visuals.
-However, these often get stifled in translation to and from language, hand gestures, and rendering.
-What is the next interface between minds?
+For me, the best way to communicate a story is through visuals and motion.
+However, these often get stifled in translation to and from language, gestures, and rendering.
+I am looking for a better way and when I find it I will tranq, bag, and patent it.
 
 Google Plus profile
 +1

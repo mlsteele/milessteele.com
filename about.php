@@ -15,7 +15,7 @@ $(document).ready(function(){
 		I am a digital artist, programmer, and unicyclist located in Amherst, MA.
 		I work with open source software whenever I can.
 		
-		Stuff I've played with (and enjoyed) include
+		Things I've played with (and enjoyed) include
 		
 		Blender 3D,
 		Gimp,
@@ -33,10 +33,11 @@ $(document).ready(function(){
 		and C++.
 	</p>
 	<p>
-		I am interested in how the mind works.
-		Specifically the storage and encoding of memories.
-		For me, the best way to communicate a story is through visuals and motion.
-		However, these often get stifled in translation to and from language, gestures, and rendering.
-		I am looking for a better way and when I find it I will tranq, bag, and patent it.
+		I want to be able to wave my hands in the air and tell stories.
+		Somewhere along the chain from memory to expression to communication someone always manages to fumble a piece here or there.
+		I believe in the coordination of physical systems, computational interpretation, and artistic expression
+		into a new kind of link between people.
 	</p>
+	
+	<div class="emaillink"></div>
 </div>
