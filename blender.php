@@ -7,14 +7,13 @@ $collection = 'blender';
 
 <div class="alibi">
 	Blender 3D is a free, open-source 3d creation suite that can do just about anything, 
-	from modeling & rendering to video processing and compositing.
+	from modeling and rendering to video processing and compositing.
 	Blender is a fantastic creative tool and can be found at <a href="http://blender.org">blender.org</a>.
 	I discovered Blender at <a href="http://siggraph.org/s2008/">Siggraph '08</a>.
 	This gallery is a selection of my Blender creations since the summer of 2010.
 </div>
 
 <?php ci('wallp'); ?>
-
 
 <?php ci2('origami_l2', 'menger-l2'); ?>
 
