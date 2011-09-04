@@ -24,10 +24,10 @@ $(document).ready(function(){
 		imageJ,
 		Context Free,
 		
+		Arduino,
 		Java,
 		Javascript,
 		Scala,
-		Arduino,
 		Python,
 		C,
 		and C++.
