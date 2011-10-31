@@ -73,13 +73,18 @@
 	# image placer functions
 	function image_placer($imgname, $dir, $width) {
 		global $collection;
+		$ext = 'jpg';
+		# Wee, a hack!
+		if ($collection == 'orbitals') {
+			$ext = 'png';
+		}
 		
 		echo "<a
-			href='images/$collection/fbox/$imgname.jpg'
+			href='images/$collection/fbox/$imgname.$ext'
 			class='fbox'
 			rel='$collection'
 			><img
-			src='images/$collection/$dir/$imgname.jpg'
+			src='images/$collection/$dir/$imgname.$ext'
 			width='$width'
 			alt='collection item'
 		></a>";
@@ -100,18 +105,6 @@
 		echo "</div>";
 		
 	}
-	
-	function ci3($imgname1, $imgname2, $imgname3) {
-		echo "<div class='galimg'>";
-		image_placer($imgname1, 660, 600);
-		image_placer($imgname2, 300, 299.9);
-		image_placer($imgname3, 300, 299.9);
-		echo "</div>";
-	}
-	
-	function image_placer_catlist($imgname, $set, $width) {
-		echo "<a href=\"$set\"><img class=\"fimage\" src=\"images/$set/300/$imgname.jpg\" width=\"$width\" alt=\"collection item\"></a>";
-	}
 ?>
 
 </head>
@@ -130,12 +123,10 @@
 			<div class="navdiv"></div>
 			<a href="context_free">Context Free</a>
 			<div class="navdiv"></div>
+			<a href="orbitals">Orbitals</a>
+			<div class="navdiv"></div>
 			<a href="voluminisms">Voluminisms</a>
 			<div class="navdiv"></div>
-			<!--
-			<a href="programming">Programming</a>
-			<div class="navdiv"></div>
-			-->
 		</div>
 	</div>
 	<div id="divisorM"></div>
