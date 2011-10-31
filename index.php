@@ -125,8 +125,6 @@
 			<div class="navdiv"></div>
 			<a href="orbitals">Orbitals</a>
 			<div class="navdiv"></div>
-			<a href="voluminisms">Voluminisms</a>
-			<div class="navdiv"></div>
 		</div>
 	</div>
 	<div id="divisorM"></div>

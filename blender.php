@@ -39,4 +39,7 @@ $collection = 'blender';
 </div>
 <?php ci('sierpinski_shadows'); ?>
 
+<?php ci('smoke64-emits'); ?>
+<?php ci2('synthetic', 'fruitjuice-orange-red'); ?>
+
 <?php $collection = ''; ?>

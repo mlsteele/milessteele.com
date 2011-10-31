@@ -1,6 +1,6 @@
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(blender|animation|context_free|orbitals|voluminisms|about|404)$ index.php?pageid=$1
+RewriteRule ^(blender|animation|context_free|orbitals|about|404)$ index.php?pageid=$1
 RewriteRule ^programming$ programming.php
 
 Options -Indexes
