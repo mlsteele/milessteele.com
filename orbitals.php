@@ -4,6 +4,12 @@ $collection = 'orbitals';
 ?>
 
 <?php ci('contact1'); ?>
+<div class="alibi">
+  The result of a simple physical simulation system written in Python.
+  Planets drift in space, gravitationally attracting each other, and trace their paths and
+  velocities.
+</div>
+
 <?php ci('frame_3000_126-2'); ?>
 <?php ci2('frame_3000_314', 'frame_3000_9072'); ?>
 <?php ci('frame_3000_3824'); ?>
