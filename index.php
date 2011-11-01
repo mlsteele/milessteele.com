@@ -125,6 +125,8 @@
 			<div class="navdiv"></div>
 			<a href="orbitals">Orbitals</a>
 			<div class="navdiv"></div>
+			<a href="traditional">Traditional</a>
+			<div class="navdiv"></div>
 		</div>
 	</div>
 	<div id="divisorM"></div>
