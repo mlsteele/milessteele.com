@@ -73,10 +73,12 @@
 	# image placer functions
 	function image_placer($imgname, $dir, $width) {
 		global $collection;
-		$ext = 'jpg';
-		# Wee, a hack!
-		if ($collection == 'orbitals') {
+		
+		# Wee, a hack! (file extension)
+		if ($collection == 'orbitals' || $collection == 'mit') {
 			$ext = 'png';
+		} else {
+			$ext = 'jpg';
 		}
 		
 		echo "<a
