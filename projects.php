@@ -1,18 +1,29 @@
 <?php
 $title='A Few Projects';
-$collection = 'mit';
+$collection = 'projects';
+?>
+
+<?php
+function video_placer($vid) {
+    global $collection;
+    echo "<iframe class=\"vidcan\" src=\"http://player.vimeo.com/video/$vid";
+    echo "?byline=0&amp;";
+    echo "portrait=0&amp;";
+    echo "color=ffffff\" width=\"500\" height=\"400\" frameborder=\"0\">";
+    echo "</iframe>";
+}
 ?>
 
 <?php ci2('animatedcf', 'antscoop'); ?>
 <div class="alibi">
-  The leftmost image is a screenshot from a javascript program I wrote.
+  The left image is a screenshot from a javascript program I wrote.
   While using <a href="/context_free">Context Free</a> as an artistic tool
   I found myself constantly changing a variable by a tiny amount to get the perfect look and rerendering
   The movement that ensued was interesting but too choppy and slow. With this implementation I 
   put the focus on animation, so the location of a mouse of the passage of time would cause
   recursively described trees to grow and wilt.
   <br><br>
-  The image of the right is my implementation of Langton's Ant, a visual sorto-of-turing machine.
+  The image on the right is my implementation of <a href="http://en.wikipedia.org/wiki/Langton's_ant">Langton's Ant</a>, a visual sort of Turing Machine.
   I experimented with the idea by placing two ants on the same grid and having them interact.
   Surprisingly, the two ants pictured above grow their colonies into each other, run through each other's for a while
   and then reunite on the perimeter and quickly expand to fill the entire canvas with a clear pattern.
@@ -50,6 +61,11 @@ $collection = 'mit';
   I got to work with other programmers and designers, create some interactive projects,
   and learn a new language. This language was Javascript which may now be my favorite
   programming language, I used it to try yet another coding style on a physics simulation (on the right).
+</div>
+
+<?php ci('flyprofile'); ?>
+<div class="alibi">
+  Rendering from a 3d x-ray of a fly's head. This is from my internship with Manu Prakash at the MIT Media lab in 2010.
 </div>
 
 <?php

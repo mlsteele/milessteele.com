@@ -75,7 +75,7 @@
 		global $collection;
 		
 		# Wee, a hack! (file extension)
-		if ($collection == 'orbitals' || $collection == 'mit') {
+		if ($collection == 'orbitals' || $collection == 'projects') {
 			$ext = 'png';
 		} else {
 			$ext = 'jpg';
