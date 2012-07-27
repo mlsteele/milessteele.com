@@ -3,7 +3,7 @@ $title='Traditional Media';
 $collection = 'traditional';
 ?>
 
-<?php ci('shiny'); ?>
+<?php ci('shiny-cc'); ?>
 <?php ci('lily'); ?>
 <?php ci('hc1-3'); ?>
 <?php ci('microbe'); ?>
