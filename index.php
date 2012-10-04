@@ -119,15 +119,15 @@
 		<div id="divisorL"></div>
 		<div id="nav">
 			<div class="navdiv"></div>
-			<a href="blender">Blender 3D</a>
+			<a href="/blender">Blender 3D</a>
 			<div class="navdiv"></div>
-			<a href="animation">Animation</a>
+			<a href="/animation">Animation</a>
 			<div class="navdiv"></div>
-			<a href="context_free">Context Free</a>
+			<a href="/context_free">Context Free</a>
 			<div class="navdiv"></div>
-			<a href="orbitals">Orbitals</a>
+			<a href="/orbitals">Orbitals</a>
 			<div class="navdiv"></div>
-			<a href="traditional">Traditional</a>
+			<a href="/traditional">Traditional</a>
 			<div class="navdiv"></div>
 		</div>
 	</div>
@@ -139,7 +139,7 @@
 		</div>
 	</div>
 	<div id="footer">
-		<span>&#169; 2011 &#8764; </span><a href="about">Miles Steele</a><span class="uplink"> &#8764; <a href="javascript:void(0)" class="uplink">Top</a></span>
+		<span>&#169; 2011 &#8764; </span><a href="/about">Miles Steele</a><span class="uplink"> &#8764; <a href="javascript:void(0)" class="uplink">Top</a></span>
 	</div>
 </div>
 <a id="aboutcurl" href="about"></a>
