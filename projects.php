@@ -18,7 +18,7 @@ function video_placer($vid) {
 <div class="alibi">
   The left image is a screenshot from a javascript program I wrote.
   While using <a href="/context_free">Context Free</a> as an artistic tool
-  I found myself constantly changing a variable by a tiny amount to get the perfect look and rerendering
+  I found myself constantly changing variables by a tiny amount to get the perfect look and then rerendering.
   The movement that ensued was interesting but too choppy and slow. With this implementation I 
   put the focus on animation, so the location of a mouse of the passage of time would cause
   recursively described trees to grow and wilt.
