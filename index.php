@@ -74,7 +74,7 @@
 	function image_placer($imgname, $dir, $width) {
 		global $collection;
 		
-		# Wee, a hack! (file extension)
+		# Wee, a hack! (image file extensions)
 		if ($collection == 'orbitals' || $collection == 'projects') {
 			$ext = 'png';
 		} else {
@@ -124,6 +124,8 @@
 			<a href="/animation">Animation</a>
 			<div class="navdiv"></div>
 			<a href="/context_free">Context Free</a>
+			<div class="navdiv"></div>
+			<a href="/projects">Programming</a>
 			<div class="navdiv"></div>
 			<a href="/orbitals">Orbitals</a>
 			<div class="navdiv"></div>

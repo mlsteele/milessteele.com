@@ -47,7 +47,7 @@ function video_placer($vid) {
 
 <?php ci2('mag1', 'mag2'); ?>
 <div class="alibi">
-  In physics class last year I tried to generate visualizations of magnetic fields.
+  In physics class (2010) I tried to generate visualizations of magnetic fields.
   These are a few of my attempts.
   One fun feature of using simulation is that you could move the mouse across the canvas
   and the needle of a virtual compass would swing to give a more visceral feel of the
