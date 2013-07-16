@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="/style/common.css" type="text/css">
 
 <script type="text/javascript" src="/js/vendor/jquery-1.6.1.min.js"></script>
-
 <script type="text/javascript" src="/js/common.js"></script>
 
 <!-- fancybox -->
