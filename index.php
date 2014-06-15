@@ -42,7 +42,18 @@
 
 <?php
 	# setup page identification
-	$pageid = $_GET['pageid'];
+	if (isset($_GET['pageid'])) {
+		$pageid = $_GET['pageid'];
+	} else {
+		# an empty id means home.
+		$pageid = '';
+	}
+
+	# send invalid pageids to 404
+	if (!preg_match('/^[A-Za-z_]*$/', $pageid)) {
+		$pageid = '404';
+	}
+
 	$title = '';
 	
 	# buffer page contents
