@@ -6,7 +6,7 @@ $collection = 'animation';
 <?php
 function video_placer($vid) {
     global $collection;
-    echo "<iframe class=\"vidcan\" src=\"http://player.vimeo.com/video/$vid";
+    echo "<iframe class=\"vidcan\" src=\"https://player.vimeo.com/video/$vid";
     echo "?byline=0&amp;";
     echo "portrait=0&amp;";
     echo "color=ffffff\" width=\"500\" height=\"400\" frameborder=\"0\">";
@@ -27,6 +27,8 @@ function video_placer($vid) {
 
 <script type="text/javascript">
 $(document).ready(function() {
+    return // The thing below was cool.
+           // But even years later it runs too slow to be worth it.
 	var duration =    1e3 * 1;
 	var timebetween = 1e3 * .3;
 	$.fn.reverse = [].reverse;

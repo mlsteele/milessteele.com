@@ -135,7 +135,7 @@
 			<div class="navdiv"></div>
 			<a href="/orbitals">Orbitals</a>
 			<div class="navdiv"></div>
-			<a href="http://blog.milessteele.com/">Blog</a>
+			<a href="https://blog.milessteele.com/">Blog</a>
 			<div class="navdiv"></div>
 			<a href="/projects">Programming</a>
 			<div class="navdiv"></div>
