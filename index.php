@@ -153,7 +153,7 @@
 		</div>
 	</div>
 	<div id="footer">
-		<span>&#169; 2014 &#8764; </span><a href="/about">Miles Steele</a><span class="uplink"> &#8764; <a href="javascript:void(0)" class="uplink">Top</a></span>
+		<span>&#169; 2016 &#8764; </span><a href="/about">Miles Steele</a><span class="uplink"> &#8764; <a href="javascript:void(0)" class="uplink">Top</a></span>
 	</div>
 </div>
 <a id="aboutcurl" href="about"></a>
