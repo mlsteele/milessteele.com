@@ -108,7 +108,7 @@ body {
 			
 			margin-top: 0px;
 			list-style-type: none;
-			text-align: right;
+			text-align: left;
 			.stealthLink;
 			
 			a {
@@ -123,18 +123,30 @@ body {
 				border-color: #666;
 				border-width: 0px 0px;
 			}
-			
-			.navdiv {
-				height: 0px;
-				right: 0px;
-				width: 0px;
-				margin-right: 58px;
-				
-				border: 0px;
-				border-top: 1px;
-				border-style: solid;
-				border-color: #bbb;
+
+			a:before, a:after {
+				display: block;
+				content: "";
 				position: absolute;
+				width: 0;
+				height: 1px;
+				transition: all .15s ease, background-color .4s ease;
+			}
+
+			a:before {
+				margin: -10px 0;
+				margin-left: 58px;
+			}
+
+			a:after {
+				margin: 10px 0;
+				margin-left: 58px;
+			}
+			a:hover:before, a:hover:after {
+				width: 116px;
+				margin-left: -5px;
+				background-color: #bbb;
+				transition: all .4s ease, background-color .2s ease;
 			}
 		}
 	}

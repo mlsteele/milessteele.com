@@ -128,21 +128,13 @@
 		<a id="symbol" href="/"></a>
 		<div id="divisorL"></div>
 		<div id="nav">
-			<div class="navdiv"></div>
 			<a href="/blender">Blender 3D</a>
-			<div class="navdiv"></div>
 			<a href="/context_free">Context Free</a>
-			<div class="navdiv"></div>
 			<a href="/orbitals">Orbitals</a>
-			<div class="navdiv"></div>
 			<a href="https://blog.milessteele.com/">Blog</a>
-			<div class="navdiv"></div>
 			<a href="/projects">Programming</a>
-			<div class="navdiv"></div>
 			<a href="/animation">Animation</a>
-			<div class="navdiv"></div>
 			<a href="/traditional">Traditional</a>
-			<div class="navdiv"></div>
 		</div>
 	</div>
 	<div id="divisorM"></div>

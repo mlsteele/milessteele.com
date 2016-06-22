@@ -23,6 +23,7 @@
 // });
 
 // Navigation Jiggle
+/*
 $(document).ready(function() {
 	var nav = $('#nav');
 	
@@ -52,6 +53,7 @@ $(document).ready(function() {
 		$(this).prev().animate(newstyle, animproperties);
 	});
 });
+*/
 
 // Up Arrow
 $(document).ready(function() {
